@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>J-Generator</title>
+	<meta name="description" content="Discover Jazz that you didn't even realize you were into.">
+	<meta name="author" content="Oliver Haynes">
+    <link rel="shortcut icon" href="assets/media/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Custom Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Rock+Salt" rel="stylesheet">
+</head>
+
+<body>
+    <div class="right">
+        <div class="left">
+
+            <!-- Left half of screen. -->
+            <div class="left_content">
+                <div id="div_absolute">
+                </div>
+            </div>
+
+            <!-- Right half of screen. -->
+            <div class="right_content">
+
+                <!-- Banners -->
+                <div id="scroller_welcome" class="banner scroll-left" style="background-color:#262626">
+                </div>
+                <div id="scroller_qualities" class="banner scroll-left" style="background-color:rgba(0,0,0,0.75)">
+                </div>
+                <div class="banner">
+                    <button class="btn_reset div_center_vertical banner_content_left" onclick="restart()">Restart</button>
+                    <h2 class="home_header_h1 div_center_vertical banner_content_right">J-Generator</h2>
+                </div>
+
+                <!-- Content -->
+                <div class="content">
+
+                    <!-- Displays the name of the selected artist. -->
+                    <div id="artist_header">
+                    </div>
+
+                    <!-- Displays the Youtube video here. -->
+                    <div style="margin:5px">
+                        <iframe id="video" width="50%" height="auto" frameborder="0">
+                            <p>Your browser does not support iframes.</p>
+                        </iframe>
+                    </div>
+
+                    <!-- Displays the Wiki Query result here. -->
+                    <div id="wikidiv">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading spinner. -->
+    <div class="loader_container">
+        <div class="loader">
+        </div>
+    </div>
+
+    <!-- Javascript imports. -->
+    <script type="text/javascript" src="assets/js/cookies.js"></script>
+    <script type="text/javascript" src="assets/js/animation.js"></script>
+    <script type="text/javascript" src="assets/js/browser.js" ></script>
+    <script type="text/javascript" src="assets/js/result.js"></script>
+</body>
+
+</html>

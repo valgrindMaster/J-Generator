@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>J-Generator</title>
+	<meta name="description" content="Discover Jazz that you didn't even realize you were into.">
+	<meta name="author" content="Oliver Haynes">
+    <link rel="shortcut icon" href="assets/media/favicon.ico" />
+	<link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Custom Google Fonts. -->
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Rock+Salt" rel="stylesheet">
+</head>
+
+<!-- "Overflow hidden" prevents horizontal navigation bar from forming. -->
+<body style="overflow:hidden">
+    <div class="right">
+        <div class="left">
+
+            <!-- Left half of screen. -->
+            <div class="left_content">
+            	<div class="div_center">
+            		<h1 class="home_header_h1">J-Generator</h1>
+            		<h2>Discover What Jazz You're Into.</h2>
+            	</div>
+            </div>
+
+            <!-- Right half of screen. -->
+            <div class="right_content">
+
+                <!-- Javscript-created elements live here. -->
+
+                <!-- Popup form gathers user's name a stores locally. -->
+                <div class="popup"><p onclick="popup()">I Was Here (?)</p>
+					<span class="popuptext" id="myPopup">
+						<form id="form_user" name="user_name" onsubmit="return formSubmit()">
+							<div>
+								<h3>User Information</h3>
+								<label for="fname">First Name:</label>
+								<input type="text" name="fname" id="fname">
+								<label for="lname">Last Name:</label>
+								<input type="text" name="lname" id="lname">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</span>
+				</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Loading spinner. -->
+    <div class="loader_container">
+        <div class="loader">
+        </div>
+    </div>
+
+    <!-- Javascript imports. -->
+    <script type="text/javascript" src="assets/js/cookies.js"></script>
+    <script type="text/javascript" src="assets/js/animation.js"></script>
+    <script type="text/javascript" src="assets/js/browser.js" ></script>
+    <script type="text/javascript" src="assets/js/select.js" ></script>
+</body>
+
+</html>

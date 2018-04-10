@@ -8,3 +8,5 @@
     <li>Incorporated a Youtube video link gathered from another callout using dynamic select result.</li>
     <li>Added a loading transition screen - page is only displayed once all DOM elements are fully loaded.</li>
   </ol>
+  
+  <h4>NOTE: Will not work by simply downloading and hosting. There are some hard-coded URLs in js/result.js <b>on line 16</b> that will need to be changed. Even then, there may be cross-origin problems that will arise.</h4>
